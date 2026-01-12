@@ -1,0 +1,76 @@
+
+# PANDUAN PENGGUNAAN SISTEM JEMAAT GBKP (USER MANUAL)
+
+Dokumen ini berisi panduan lengkap penggunaan website Sistem Manajemen Jemaat GBKP.
+
+## 1. Login & Akses
+-   **URL Website**: Akses website melalui browser (contoh: `http://localhost:4000` atau domain yang ditentukan).
+-   **Halaman Login**: Masukkan Email dan Password akun anda.
+-   **Logout**: Untuk keluar, klik ikon User di pojok kanan atas, lalu pilih "Keluar".
+
+## 2. Menu Home (Dashboard & Ringkasan)
+Halaman ini adalah tampilan utama setelah login.
+-   **Kartu Statistik**: Menampilkan total Jemaat, jumlah KBB, Luar KBB, dan Jemaat yang sudah Sidi.
+-   **Aksi Cepat**: Tombol pintas untuk menambah jemaat baru.
+-   **Ulang Tahun Hari Ini/Besok**: Daftar jemaat yang berulang tahun.
+-   **Data Belum Lengkap**: Notifikasi jika ada data jemaat yang tanggal lahirnya belum diisi.
+-   **Ringkasan Per Sektor**: Menampilkan jumlah jemaat per sektor beserta detail kategori dan domisili. Klik "Lihat Detail" untuk membuka data sektor tersebut.
+
+## 3. Data Jemaat (CRUD)
+Menu ini digunakan untuk mengelola data jemaat secara lengkap.
+-   **Menambah Jemaat**:
+    1. Klik tombol biru "+ Tambah Jemaat" di pojok kanan atas.
+    2. Isi formulir pop-up:
+        - **Nama Lengkap**, **Sektor**, **Kategori**: Wajib diisi.
+        - **Tanggal Lahir**: Wajib diisi untuk perhitungan umur dan notifikasi ulang tahun.
+        - **Status Sidi**: Pilih "Sudah" atau "Belum".
+        - **Domisili**: Pilih "KBB" atau "Luar KBB".
+        - **Alamat**: Jika memilih "Luar KBB", kolom alamat akan muncul dan bersifat opsional.
+    3. Klik "Simpan".
+
+-   **Mengedit Jemaat**:
+    1. Cari jemaat pada tabel.
+    2. Klik tombol "Edit" (ikon pensil) di baris jemaat tersebut.
+    3. Ubah data yang diinginkan.
+    4. Klik "Simpan".
+
+-   **Menghapus Jemaat**:
+    - **Hapus Satu**: Klik tombol "Hapus" (ikon tempat sampah) di baris jemaat. Konfirmasi penghapusan.
+    - **Hapus Banyak (Batch Delete)**:
+        1. Centang kotak (checklist) di sebelah kiri nama jemaat yang ingin dihapus.
+        2. Atau centang kotak di header tabel untuk memilih semua jemaat yang sedang tampil.
+        3. Tombol merah "Hapus X Data" akan muncul di atas tabel. Klik tombol tersebut dan konfirmasi.
+
+-   **Pencarian & Filter**:
+    - **Search**: Ketik nama jemaat di kolom pencarian.
+    - **Filter**: Gunakan dropdown untuk menyaring berdasarkan Sektor, Kategori, Domisili, atau Status Sidi.
+
+## 4. Kalender Ulang Tahun
+Menu ini menampilkan kalender visual.
+-   Lihat jemaat yang berulang tahun pada tanggal tertentu.
+-   Klik pada tanggal untuk melihat detail siapa saja yang berulang tahun.
+
+## 5. Statistik Demografi
+Menu ini menampilkan analisis data visual.
+-   Grafik dan chart untuk melihat persebaran jemaat berdasarkan kategori, sektor, umur, dll.
+
+## 6. Download Data (Export Excel)
+Menu ini digunakan untuk mengambil data dari sistem.
+-   Klik menu ini untuk mengekspor data jemaat ke dalam format Excel (.xlsx) untuk kebutuhan laporan offline.
+
+## 7. Admin Management (Tambah Admin)
+Menu khusus untuk mengelola akses pengguna aplikasi.
+-   Gunakan menu ini untuk mendaftarkan akun admin baru yang bisa mengakses sistem ini.
+-   Isi Nama, Email, dan Password untuk akun baru.
+
+## 8. Data Pelayan
+Menu untuk mengelola data pelayan (Pertua/Diaken).
+-   Berfungsi mirip dengan Data Jemaat namun khusus untuk daftar pelayan gereja.
+
+## Bantuan & Support
+Jika mengalami kendala teknis atau error pada sistem:
+-   Lihat kotak "Butuh Bantuan?" di bagian bawah Sidebar.
+-   Klik tombol "Kontak Support" untuk terhubung langsung ke WhatsApp Administrator.
+
+---
+*Dibuat otomatis oleh Sistem Jemaat GBKP*

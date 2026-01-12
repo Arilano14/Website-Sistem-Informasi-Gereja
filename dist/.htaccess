@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Block access to sensitive files
+    <FilesMatch "^\.env|composer\.json|composer\.lock|package\.json|README\.md|\.git">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+
+    # Block access to dotfiles (hidden files) except .htaccess
+    RewriteRule (^\.|/\.) - [F]
+
+    # Handle SPA routing for existing files/directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
